@@ -1,0 +1,5 @@
+azure-functions
+pymongo
+requests
+python-dotenv
+instagram-api-python
