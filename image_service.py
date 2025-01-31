@@ -56,7 +56,7 @@ class ImageService:
                 temp_file.write(chunk)
 
             temp_file.close()
-            print(temp_file.name)
+
             return temp_file.name
 
         return None
@@ -79,15 +79,9 @@ class ImageService:
                 logging.error("No unshared quotes found")
                 return None
 
-            # Alıntıyı Leonardo.ai için prompt'a çevir
             prompt = f"Create an artistic interpretation of the quote: {quote}"
 
-            image_url = self.generate_image_with_pollinations(prompt)
-            if not image_url:
-                logging.error("Failed to generate image with Leonardo.ai")
-                return None
-
-            image_path = self.download_image(image_url)
+            image_path = self.generate_image_with_pollinations(prompt)
             if not image_path:
                 logging.error("Failed to download generated image")
                 return None

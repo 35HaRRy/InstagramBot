@@ -1,2 +1,5 @@
 # Ignore environment variables
 .env
+
+config/
+__pycache__/

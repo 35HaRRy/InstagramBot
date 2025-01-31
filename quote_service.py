@@ -14,7 +14,7 @@ class QuoteService:
         quote = self.quotes_collection.find_one({"isShared": False})
 
         return quote
-        
+
     def mark_quote_as_shared(self, quote_id):
         # Alıntıyı paylaşıldı olarak işaretle
         self.quotes_collection.update_one(
