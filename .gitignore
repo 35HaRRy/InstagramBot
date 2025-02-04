@@ -3,3 +3,5 @@
 
 config/
 __pycache__/
+.python_packages
+.venv
