@@ -1,3 +1,0 @@
-az login
-az functionapp create --resource-group 35hhinstagrambot --consumption-plan-location "East US " --runtime python --runtime-version 3.11 --functions-version 4 --name "35HH-InstagramBot"
-func azure functionapp publish "35HH-InstagramBot"
